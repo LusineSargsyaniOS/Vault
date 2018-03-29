@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DejaVuSans.ttf">
+            <string>DejaVuSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="57" id="ta7-bN-Z7X" customClass="ItemCell" customModule="Vault" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ta7-bN-Z7X" id="LGm-gR-NPk">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="56.666666666666664"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rj0-Pb-JDS">
+                        <rect key="frame" x="26" y="28.333333333333329" width="15" height="15"/>
+                        <color key="backgroundColor" red="1" green="0.20392156859999999" blue="0.20392156859999999" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="3Ou-Gn-NND">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
+                            <constraint firstAttribute="height" constant="15" id="I7f-nm-0bF">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3U-FS-oHN">
+                        <rect key="frame" x="56" y="20" width="251" height="31.666666666666671"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="DejaVuSans" family="DejaVu Sans" pointSize="16.700000762939453"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" name="DejaVuSans" family="DejaVu Sans" pointSize="23.700000762939453"/>
+                        </variation>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kwv-cV-GDE">
+                        <rect key="frame" x="315" y="0.0" width="60" height="56.666666666666664"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="igw-r9-mlc"/>
+                        </constraints>
+                        <connections>
+                            <action selector="updateStatusAction:" destination="ta7-bN-Z7X" eventType="touchUpInside" id="JH3-9t-dly"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ygB-JX-trw">
+                        <rect key="frame" x="20" y="55.666666666666664" width="335" height="1"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.20194777397260275" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="5jS-AU-LcI"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_more_vert_white_48px" translatesAutoresizingMaskIntoConstraints="NO" id="X4A-T0-dg7">
+                        <rect key="frame" x="335" y="18" width="20" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="SQr-HE-UIn">
+                                <variation key="heightClass=regular-widthClass=regular" constant="42"/>
+                            </constraint>
+                            <constraint firstAttribute="width" constant="20" id="Tm4-yC-xud">
+                                <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                            </constraint>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Kwv-cV-GDE" firstAttribute="leading" secondItem="m3U-FS-oHN" secondAttribute="trailing" constant="8" id="5EL-bQ-VVV">
+                        <variation key="heightClass=regular-widthClass=regular" constant="16"/>
+                    </constraint>
+                    <constraint firstItem="Rj0-Pb-JDS" firstAttribute="centerY" secondItem="m3U-FS-oHN" secondAttribute="centerY" id="7Tt-rX-APl"/>
+                    <constraint firstAttribute="bottom" secondItem="ygB-JX-trw" secondAttribute="bottom" id="CcA-kQ-s8i"/>
+                    <constraint firstItem="m3U-FS-oHN" firstAttribute="leading" secondItem="Rj0-Pb-JDS" secondAttribute="trailing" constant="15" id="G7n-K6-8Gi">
+                        <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                    </constraint>
+                    <constraint firstItem="Rj0-Pb-JDS" firstAttribute="leading" secondItem="LGm-gR-NPk" secondAttribute="leading" constant="26" id="GTY-Sd-IaE">
+                        <variation key="heightClass=regular-widthClass=regular" constant="52"/>
+                    </constraint>
+                    <constraint firstItem="ygB-JX-trw" firstAttribute="leading" secondItem="LGm-gR-NPk" secondAttribute="leading" constant="20" id="GUU-y0-bL3">
+                        <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                    </constraint>
+                    <constraint firstItem="Kwv-cV-GDE" firstAttribute="top" secondItem="LGm-gR-NPk" secondAttribute="top" id="JrJ-xB-ihK"/>
+                    <constraint firstItem="X4A-T0-dg7" firstAttribute="centerY" secondItem="Kwv-cV-GDE" secondAttribute="centerY" id="ZDu-nR-LCg"/>
+                    <constraint firstItem="X4A-T0-dg7" firstAttribute="centerX" secondItem="Kwv-cV-GDE" secondAttribute="centerX" id="dSS-5M-FLk"/>
+                    <constraint firstAttribute="trailing" secondItem="ygB-JX-trw" secondAttribute="trailing" constant="20" id="hI6-m6-W72">
+                        <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                    </constraint>
+                    <constraint firstAttribute="trailing" secondItem="Kwv-cV-GDE" secondAttribute="trailing" id="n3k-Ka-Jkb">
+                        <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                    </constraint>
+                    <constraint firstItem="m3U-FS-oHN" firstAttribute="top" secondItem="LGm-gR-NPk" secondAttribute="top" constant="20" id="oes-hp-jQl"/>
+                    <constraint firstAttribute="bottom" secondItem="Kwv-cV-GDE" secondAttribute="bottom" id="rmU-ri-Lzx"/>
+                    <constraint firstAttribute="bottom" secondItem="m3U-FS-oHN" secondAttribute="bottom" constant="5" id="sLI-A6-FB2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="moreButton" destination="Kwv-cV-GDE" id="2sy-2J-aR7"/>
+                <outlet property="moreImageView" destination="X4A-T0-dg7" id="RBm-Ca-pI5"/>
+                <outlet property="statusView" destination="Rj0-Pb-JDS" id="51U-Ps-2wc"/>
+                <outlet property="titleLabel" destination="m3U-FS-oHN" id="8TR-LO-GYL"/>
+            </connections>
+            <point key="canvasLocation" x="506.5" y="-358.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_more_vert_white_48px" width="48" height="48"/>
+    </resources>
+</document>

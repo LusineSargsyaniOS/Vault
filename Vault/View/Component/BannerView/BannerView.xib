@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DejaVuSansCondensed.ttf">
+            <string>DejaVuSansCondensed</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BannerView" customModule="Vault" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="443" height="53"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="46p-2y-XMH">
+                    <rect key="frame" x="23.5" y="0.0" width="396" height="53"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error messageError messageError messageError messageError messageError messageError messageError messageError message" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePw-Z1-5oX">
+                            <rect key="frame" x="57" y="0.0" width="339" height="53"/>
+                            <fontDescription key="fontDescription" name="DejaVuSansCondensed" family="DejaVu Sans" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="heightClass=regular-widthClass=regular">
+                                <fontDescription key="fontDescription" name="DejaVuSansCondensed" family="DejaVu Sans" pointSize="20"/>
+                            </variation>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info" translatesAutoresizingMaskIntoConstraints="NO" id="q6m-I4-PUS">
+                            <rect key="frame" x="0.0" y="6.5" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="LM2-14-q4a">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="64"/>
+                                </constraint>
+                                <constraint firstAttribute="width" constant="40" id="nRv-21-WzQ">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="65"/>
+                                </constraint>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="ePw-Z1-5oX" firstAttribute="centerY" secondItem="46p-2y-XMH" secondAttribute="centerY" id="AW3-Gl-qqr"/>
+                        <constraint firstItem="q6m-I4-PUS" firstAttribute="leading" secondItem="46p-2y-XMH" secondAttribute="leading" id="D7h-uN-qd2"/>
+                        <constraint firstItem="ePw-Z1-5oX" firstAttribute="leading" secondItem="q6m-I4-PUS" secondAttribute="trailing" constant="17" id="UrJ-1b-bCq"/>
+                        <constraint firstAttribute="bottom" secondItem="ePw-Z1-5oX" secondAttribute="bottom" id="Wd9-CF-tWS"/>
+                        <constraint firstItem="q6m-I4-PUS" firstAttribute="centerY" secondItem="46p-2y-XMH" secondAttribute="centerY" id="bGn-l5-9c6"/>
+                        <constraint firstItem="q6m-I4-PUS" firstAttribute="top" relation="greaterThanOrEqual" secondItem="46p-2y-XMH" secondAttribute="top" constant="5" id="dyp-24-OUc"/>
+                        <constraint firstItem="ePw-Z1-5oX" firstAttribute="top" secondItem="46p-2y-XMH" secondAttribute="top" id="dyu-iF-7Xx"/>
+                        <constraint firstAttribute="trailing" secondItem="ePw-Z1-5oX" secondAttribute="trailing" id="r6z-lb-vT5"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="q6m-I4-PUS" secondAttribute="bottom" constant="5" id="tbw-ea-7O6"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.20392156862745098" blue="0.20392156862745098" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="46p-2y-XMH" secondAttribute="bottom" id="2Qu-0G-MRw"/>
+                <constraint firstItem="46p-2y-XMH" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerXWithinMargins" id="5Cr-8H-D4M"/>
+                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="46p-2y-XMH" secondAttribute="trailing" id="NDQ-1C-Q3n"/>
+                <constraint firstItem="46p-2y-XMH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="dPc-Ud-S5f"/>
+                <constraint firstAttribute="topMargin" secondItem="46p-2y-XMH" secondAttribute="top" id="pHY-7j-iTf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="messageLabel" destination="ePw-Z1-5oX" id="Lkc-bK-Mae"/>
+            </connections>
+            <point key="canvasLocation" x="-315.5" y="190.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="info" width="48" height="48"/>
+    </resources>
+</document>
